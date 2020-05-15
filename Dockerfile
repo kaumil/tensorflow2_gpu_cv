@@ -13,6 +13,4 @@ RUN apt-get update
 RUN apt-get install -y libsm6 libxext6 libxrender-dev
 RUN pip3 install opencv-python
 
-RUN jupyter labextension install @mflevine/jupyterlab_html
-
 CMD ["bash", "-c", "source /etc/bash.bashrc && jupyter lab --notebook-dir=/tf --ip 0.0.0.0 --no-browser --allow-root"]
