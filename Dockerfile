@@ -7,6 +7,7 @@ RUN pip3 install jupyterlab
 RUN pip3 install xeus-python==0.7.1
 RUN pip3 install ptvsd
 RUN pip3 install SciPy pandas sklearn
+RUN python -m pip install bokeh
 
 
 RUN apt-get update
