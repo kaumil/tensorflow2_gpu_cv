@@ -7,6 +7,7 @@ Libraries include:
 - pandas
 - numpy
 - bokeh
+- chartify
 - Pillow
 - opencv-python
 - jupyter-lab
