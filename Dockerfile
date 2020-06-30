@@ -15,4 +15,7 @@ RUN apt-get update
 RUN apt-get install -y libsm6 libxext6 libxrender-dev
 RUN pip3 install opencv-python
 
+EXPOSE 6006
+RUN pip3 install jupyter-tensorboard
+
 CMD ["bash", "-c", "source /etc/bash.bashrc && jupyter lab --notebook-dir=/tf --ip 0.0.0.0 --no-browser --allow-root"]
