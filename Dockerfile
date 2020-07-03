@@ -17,7 +17,7 @@ RUN pip3 install opencv-python
 
 #Adding libraries for saving keras model architecture to images
 RUN pip3 install pydot pydotplus graphviz
-RUN apt-get install graphviz
+RUN apt-get install graphviz -y
 
 EXPOSE 6006
 RUN pip3 install jupyter-tensorboard
